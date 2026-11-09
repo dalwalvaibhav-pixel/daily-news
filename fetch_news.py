@@ -6,7 +6,7 @@ import os, re, sys, time, html, datetime, pathlib
 import requests, markdown
 
 IST = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
-MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")   # change if Google renames it
+MODEL = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")   # change if Google renames it
 API_KEY = os.getenv("GEMINI_API_KEY", "")
 PAUSE = int(os.getenv("PAUSE_SECONDS", "12"))           # pause between calls (free-tier rate limit)
 
